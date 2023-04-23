@@ -11,3 +11,14 @@
     }
     return strings;
 }
+
+string[] SelectStrings(string[] array)
+{
+    string[] newStrings = new string[array.Length];
+    for(int i=0; i<array.Length; i++)
+    {
+        if(array[i].Length < 4) newStrings[i] = array[i];
+        else newStrings[i] = String.Empty;
+    }
+    return newStrings;
+}
