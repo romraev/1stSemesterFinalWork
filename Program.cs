@@ -22,3 +22,12 @@ string[] SelectStrings(string[] array)
     }
     return newStrings;
 }
+
+void WriteArray(string[]array)
+{
+    Console.Write("[");
+    for(int i=0; i<array.Length; i++)
+        if(array[i] != String.Empty) Console.Write("\"" + array[i] + "\", ");
+    Console.Write("\b" + "\b" + "]");
+    Console.WriteLine();
+}
